@@ -1,0 +1,777 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:14px "微软雅黑","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:none} 
+em{font-style:normal} 
+li{list-style:none;cursor: pointer;} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+
+html{
+    background:#293042;
+}
+body{
+    background:#293042;
+    padding-bottom: 0.2rem;
+}
+.active{
+    color: #10ffff !important;
+    background: #3b576a;
+}
+
+
+.weatherActive{
+    color: #10ffff !important;
+}
+
+.bannerTop,.mainBody{
+    width: 100%;
+    margin:0 auto;
+}
+
+/* 顶部 */
+header,
+.contnetBox {
+    width: 100%;
+    background-color: #293042;
+    overflow: hidden;
+}
+
+header {
+    -moz-box-shadow: 0px 0.04rem 0.08rem #1A1F2A;
+    -webkit-box-shadow: 0px 0.04rem 0.08rem #1A1F2A;
+    box-shadow: 0px 0.04rem 0.08rem #1A1F2A;
+}
+
+.timeBar {
+    float: left;
+    width: 4.92rem;
+
+    height: 0.78rem;
+
+    line-height: 0.78rem;
+    color: #fff;
+    box-sizing: border-box;
+    padding-left: 0.24rem;
+    font-size: 0.22rem;
+}
+
+.logo {
+    float: left;
+    width: 9.38rem;
+    height: 0.78rem;
+    background-image: url("../images/logo_02.png");
+    background-size: cover;
+}
+
+.weatherBox {
+    width: 4.6rem;
+    height: 0.78rem;
+    float: left;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 0.12rem;
+    padding-left: 1.5rem;
+}
+
+.weatherBox .info {
+    overflow: hidden;
+    width: 3rem;
+    height: 0.5rem;
+
+}
+
+.weatherBox .info .cityName {
+    float: left;
+    width: 0.64rem;
+    height: 0.46rem;
+    padding: 0 0.1rem 0 4px;
+    border-right: 1px dotted #aaa;
+    box-sizing: border-box;
+}
+
+.cityName .city {
+    float: left;
+    font-size: 0.14rem;
+    margin-top: 0.04rem;
+}
+.cityName .changeCity{
+    margin-top: 0.04rem;
+    float: left;
+    font-size:0.12rem;
+}
+
+.weatherBox .info .weatherToday {
+    float: left;
+    width: 2rem;
+    height: 0.46rem;
+    box-sizing: border-box;
+    padding-left: 0.1rem;
+    margin-top: 0.04rem;
+}
+
+.weatherToday .weatherImg {
+    float: left;
+    width: 0.46rem;
+    height: 0.46rem;
+}
+
+.weatherToday .weatherInf {
+    float: left;
+    font-size: 0.12rem;
+    padding: 0.04rem 0;
+}
+.weatherToday .weatherInf img{
+    width: 0.17rem;
+    height: 0.17rem;
+}
+
+/* 功能板块 */
+.contnetBox {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: .2rem;
+    padding-left: .2rem;
+}
+
+.contnetBox .leftBox {
+    width: 4.5rem;
+    float: left;
+}
+
+/* 值班信息 */
+#dutyBox {
+    width: 4.5rem;
+    height: 1.75rem;
+    background: url("../images/left_01.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#dutyBox .dutyTitle {
+    float: left;
+    width: .5rem;
+    box-sizing: border-box;
+    color: #10ffff;
+    font-size: .2rem;
+    padding-left: .2rem;
+    padding-top: .44rem;
+}
+#dutyBox .dutyList{
+    float: left;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: .3rem;
+    padding-left: .2rem;
+    width: 3.2rem;
+    height: 1.2rem;
+}
+#dutyBox .dutyList .leader{
+    font-size: .16rem;
+}
+#dutyBox .dutyList .leader i{
+    width: 1.2rem;
+    text-align: justify;
+    text-align-last: justify;
+    display: inline-block;
+    font-style: normal;
+}
+#dutyBox .dutyPerson{
+    margin-top: .24rem;
+    font-size: .16rem;
+}
+#dutyBox .dutyPerson i{
+    float: left;
+    width: .9rem;
+    height: .6rem;
+    text-align: justify;
+    text-align-last: justify;
+    display: block;
+    font-style: normal;
+}
+
+/* 预警信息 */
+#warnBox {
+    width: 4.5rem;
+    height: 2.15rem;
+    background: url("../images/left_02.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: .14rem;
+}
+
+#warnBox .warnTitle {
+    float: left;
+    width: .5rem;
+    box-sizing: border-box;
+    color: #10ffff;
+    font-size: .2rem;
+    padding-left: .2rem;
+    padding-top: .6rem;
+}
+
+#warnBox .warnCont {
+    float: left;
+    box-sizing: border-box;
+    padding-top: .18rem;
+    padding-left: .1rem;
+}
+
+#warnBox .warnCont .warnDepart {
+    /* width: 352px; */
+    height: .34rem;
+    box-sizing: border-box;
+    border: 1px solid #3b576a;
+    font-size: .16rem;
+}
+
+.warnDepart li {
+    float: left;
+    border-right: 1px solid #3b576a;
+    
+    
+}
+.warnDepart li a{
+    width: .88rem;
+    display: inline-block;
+    color: #c1d4f6;
+    text-align: center;
+    line-height: .32rem;
+}
+.warnDepart li a:hover{
+    /* color: #10ffff; */
+    background: #3b576a;
+}
+
+.warnDepart li:last-child {
+    border-right: none;
+}
+#warnBox .warnCont .warnList{
+    margin-top: .1rem;
+}
+#warnBox .warnCont .warnList li{
+    margin-top: 4px;
+    height: .4rem;
+    overflow: hidden;
+}
+#warnBox .warnCont .warnList li span{
+    float: left;
+    color: #10ffff;
+    height: .4rem;
+    display: block;
+    line-height: .4rem;
+    width: .96rem;
+    box-sizing: border-box;
+    border: 1px solid #365769;
+    text-align: center;
+    font-size: .16rem;
+}
+#warnBox .warnCont .warnList li a{
+    float: left;
+    color: #fff;
+    font-size: .14rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    width: 2.1rem;
+    height: .4rem;
+    line-height: .4rem;
+    display: block;
+    margin-left: .1rem;
+}
+#warnBox .warnCont .warnList li a:hover{
+    color: #10ffff;
+}
+/* 受灾情况 */
+#disasterInfo {
+    width: 4.5rem;
+    height: 3.65rem;
+    background: url("../images/left_03.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: .14rem;
+
+}
+
+#disasterInfo .disasterTitle {
+    float: left;
+    width: .5rem;
+    box-sizing: border-box;
+    color: #10ffff;
+    font-size: .2rem;
+    padding-left: .2rem;
+    padding-top: 1.34rem;
+}
+
+#disasterInfo .disasterCont {
+    float: left;
+    box-sizing: border-box;
+    padding-top: .18rem;
+    padding-left: .1rem;
+}
+
+#disasterInfo .disasterCont .disasterDepart {
+    height: .34rem;
+    box-sizing: border-box;
+    border: 1px solid #3b576a;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.disasterDepart li {
+    float: left;
+
+    
+    border-right: 1px solid #3b576a;
+    
+}
+.disasterDepart li a{
+    width: 1.76rem;
+    display: inline-block;
+    color: #c1d4f6;
+    text-align: center;
+
+    line-height: .32rem;
+    font-size: .16rem;
+}
+.disasterDepart li a:hover{
+    /* color: #10ffff; */
+    background: #3b576a;
+}
+
+.disasterDepart li:last-child {
+    border-right: none;
+}
+#disasterInfo .disasterCont .tongji{
+    box-sizing: border-box;
+    width: 3.52rem;
+    margin-top: .1rem;
+    overflow: hidden;
+}
+#disasterInfo .disasterCont .tongji div{
+    float: left;
+    width: 1.74rem;
+    height: .4rem;
+    font-size: .14rem;
+    color: #fff;
+    line-height: .4rem;
+    box-sizing: border-box;
+    padding-left: .1rem;
+}
+#disasterInfo .disasterCont .tongji div i{
+    font-size: .22rem;
+    color: #00a4ff;
+}
+#disasterInfo .disasterCont .tongji div span{
+    color: #10ffff;
+    padding: 0 4px;
+}
+#disasterInfo .disasterCont .cityAndqu{
+    box-sizing: border-box;
+    margin-top: 0.06rem;
+    overflow: hidden;
+}
+.cityNum,.quNum{
+    width: 1.76rem;
+    float: left;
+    color: #fff;
+    font-size: .15rem;
+}
+.cityTitle,.quTitle{
+    text-align: center;
+    height: .24rem;
+    line-height: .24rem;
+}
+.cityAndqu span i{
+    margin: 0 0.06rem;
+    font-size: .18rem;
+}
+.cityAndqu img{
+    width: 100%;
+    height: 100%;
+}
+.yes{
+    color:#ff7f50;
+}
+.no{
+    color:#87cefa;
+}
+.cityTuli,.quTuli{
+    margin-top: 0.04rem;
+}
+.cityPie,.quPie{
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: .1rem;
+    box-sizing: border-box;
+    margin-left: .3rem;
+}
+
+/* 灾情报告 */
+#disasterReport {
+    width: 4.5rem;
+    height: 1.55rem;
+    background: url("../images/left_04.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: .14rem;
+
+}
+
+#disasterReport .reportTitle {
+    float: left;
+    width: .5rem;
+    box-sizing: border-box;
+    color: #10ffff;
+    font-size: .2rem;
+    padding-left: .2rem;
+    padding-top: .26rem;
+}
+
+#disasterReport .reportCont {
+    float: left;
+    box-sizing: border-box;
+    padding-top: .18rem;
+    padding-left: .1rem;
+}
+
+#disasterReport .reportCont .reportDepart {
+    height: .34rem;
+    box-sizing: border-box;
+    border: 1px solid #3b576a
+}
+
+.reportDepart li {
+    float: left;
+    
+    border-right: 1px solid #3b576a;
+    
+}
+.reportDepart li a{
+    width: 1.17rem;
+    color: #c1d4f6;
+    text-align: center;
+    line-height: .32rem;
+    font-size: .16rem;
+    display: inline-block;
+}
+.reportDepart li a:hover{
+    background: #3b576a;
+}
+
+.reportDepart li:last-child {
+    border-right: none;
+}
+#disasterReport .reportCont .mingxi{
+    margin-top: .25rem;
+    width: 3.48rem;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+#disasterReport .reportCont .mingxi div{
+    float: left;
+}
+#disasterReport .reportCont .mingxi div a{
+    color: #fff;
+    width: 1.5rem;
+    height: .4rem;
+    border: 1px solid #365769;
+    display: inline-block;
+    text-align: center;
+    line-height: .4rem;
+    margin: 0 0.05rem;
+    font-size: .16rem;
+}
+
+/* 中间 */
+.contnetBox .midBox {
+    width: 9.32rem;
+    float: left;
+    margin-left: .2rem;
+}
+
+#toolBar {
+    width: 9.32rem;
+    height: .6rem;
+    background: url("../images/middle_01.png") no-repeat;
+    overflow: hidden;
+    padding: 0 .25rem;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+#toolList li {
+    float: left;
+
+}
+
+#toolList li a {
+    /* text-decoration: none; */
+    height: .6rem;
+    line-height: .6rem;
+    width: 1.1rem;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    font-size: .16rem;
+}
+#toolList li a:hover{
+    color: #10ffff;
+}
+
+#toolList li a i {
+    color: #10ffff;
+    font-size: .18rem;
+}
+
+/* 地图区域 */
+#mapBox {
+    width: 9.32rem;
+    height: 7.76rem;
+    margin-top: .16rem;
+}
+#mapBox img{
+    width: 100%;
+    height: 100%;
+}
+
+/* 底栏 */
+#proBar {
+    width: 9.32rem;
+    height: .9rem;
+    background: url("../images/middle_02.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* padding: 0 26px; */
+    box-sizing: border-box;
+    padding: 0.05rem .1rem 0 .1rem;
+    margin-top: .16rem;
+}
+
+#proList li {
+    float: left;
+    width: .7rem;
+    box-sizing: border-box;
+    padding: 0  0.05rem;
+}
+
+#proList li a dl {
+    width: .6rem;
+    text-align: center;
+}
+
+
+#proList li a dl dt {
+    height: .4rem;
+    line-height: .4rem;
+}
+
+#proList li a dl dt i {
+    font-size: .3rem;
+    color: #daf0ff;
+}
+#proList li a dl dt i:hover{
+    color: #10ffff ;
+}
+
+#proList li a dl dd {
+    font-size: .14rem;
+    color: #fff;
+}
+
+/* 右边 */
+.contnetBox .rightBox {
+    width: 4.5rem;
+    float: left;
+    margin-left: .2rem;
+}
+
+/* 灾情信息 */
+#disasterBox {
+    width: 4.5rem;
+    height: 3.4rem;
+    background: url("../images/right_01.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#disasterBox .listTitle {
+    height: .5rem;
+    text-align: center;
+    line-height: .5rem;
+    color: #10ffff;
+    font-size: .2rem;
+    box-sizing: border-box;
+    padding-top: 0.04rem;
+}
+
+#disasterBox .listCont {
+    box-sizing: border-box;
+    padding-left: .2rem;
+    padding-top: .1rem;
+}
+
+#disasterBox .listCont .listDepart {
+    height: .34rem;
+    box-sizing: border-box;
+    border: 1px solid #3b576a;
+    display: inline-block;
+}
+
+.listDepart li {
+    float: left;
+    
+    border-right: 1px solid #3b576a;
+    
+}
+.listDepart li a{
+    width: 2.06rem;
+    color: #c1d4f6;
+    text-align: center;
+    line-height: .32rem;
+    font-size: .16rem;
+    display: inline-block;
+}
+.listDepart li a:hover{
+    background: #3b576a;
+}
+
+.listDepart li:last-child {
+    border-right: none;
+}
+
+#disasterBox .listCont .weatherList {
+    height: 2.16rem;
+    padding-right: .12rem;
+}
+
+.weatherList li {
+    overflow: hidden;
+    margin-top: 0.02rem;
+    
+}
+.weatherList li a{
+    display: block;
+    height: .4rem;
+    line-height: .4rem;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0 0.06rem;
+    font-size:.16rem;
+    float: left;
+}
+.weatherList li a:hover{
+    color: #10ffff;
+}
+
+.weatherList li span {
+    float: right;
+    color: #fff;
+    font-size: .16rem;
+    height: .4rem;
+    line-height: .4rem;
+    margin-right: .12rem;
+}
+
+.green {
+    background-image: url("../images/green_09.png");
+    background-size: contain;
+}
+
+.yellow {
+    background-image: url("../images/yellow_09.png");
+    background-size: contain;
+}
+
+.orange {
+    background-image: url("../images/orange_15.png");
+    background-size: contain;
+}
+
+.red {
+    background-image: url("../images/red_17.png");
+    background-size: contain;
+}
+
+.blue {
+    background-image: url("../images/blue_19.png");
+    background-size: contain;
+}
+
+/* 动中通 */
+#historyBox {
+    width: 4.5rem;
+    height: 3.55rem;
+    background: url("../images/right_02.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-left: .16rem;
+    padding-top: 0.08rem;
+    margin-top: .12rem;
+}
+
+#historyBox .historyTitle {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#historyBox .historyTitle li {
+    float: left;
+
+}
+
+#historyBox .historyTitle li a {
+    width: 1.34rem;
+    height: .44rem;
+    text-align: center;
+    display: inline-block;
+    color: #10ffff;
+    line-height: .44rem;
+    font-size: .18rem;
+}
+#historyBox .historyTitle li a:hover{
+    background: #3b576a;
+}
+
+#historyBox .mediaBox {
+    /* box-sizing: border-box; */
+    padding-left: .14rem;
+    padding-top: .14rem;
+    width: 4rem;
+    height: 2.6rem;
+
+}
+#historyBox .mediaBox img{
+    widows: 100%;
+    height: 100%;
+}
+
+/* 动态 */
+#liveBox {
+    width: 4.5rem;
+    height: 2.35rem;
+    background: url("../images/right_03.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-left: .16rem;
+    padding-top: 0.08rem;
+    margin-top: .12rem;
+}
+
+#liveBox .liveTitle {
+    height: .44rem;
+    line-height: .44rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #10ffff;
+}
+
+#liveBox .liveContent {
+    color: #fff;
+    padding-left: .1rem;
+    box-sizing: border-box;
+    font-size: .16rem;
+}
