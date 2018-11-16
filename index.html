@@ -68,21 +68,26 @@
                             <li><a>气象</a></li>
                             <li><a>水文</a></li>
                         </ul>
-                        <ol class="warnList">
-                            <li>
-                                <span>2018-09-08</span>
-
-                                <a href="">江西省气象台解除雷电黄色预警江西省气象台解除雷电黄色预警...</a>
-                            </li>
-                            <li>
-                                <span>2018-09-08</span>
-                                <a href="">江西省气象台解除雷电黄色预警...</a>
-                            </li>
-                            <li>
-                                <span>2018-09-08</span>
-                                <a href="">江西省气象台解除雷电黄色预警...</a>
-                            </li>
-                        </ol>
+                        <div class="navCont on">
+                            <ol class="warnList">
+                                <li>
+                                    <span>2018-09-08</span>
+                    
+                                    <a href="">江西省气象台解除雷电黄色预警江西省气象台解除雷电黄色预警...</a>
+                                </li>
+                                <li>
+                                    <span>2018-09-08</span>
+                                    <a href="">江西省气象台解除雷电黄色预警...</a>
+                                </li>
+                                <li>
+                                    <span>2018-09-08</span>
+                                    <a href="">江西省气象台解除雷电黄色预警...</a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="navCont">国土内容</div>
+                        <div class="navCont">气象内容</div>
+                        <div class="navCont">水文内容</div>
                     </div>
                 </div>
                 <div id="disasterInfo">
@@ -370,8 +375,8 @@
 
         // nav切换
         $(".nav li").on("click", function () {
-            $(this).find("a").addClass("active").parents("li").siblings().find("a").removeClass(
-                "active");
+            $(this).find("a").addClass("active").parents("li").siblings().find("a").removeClass("active");
+            $(".navCont").hide().eq($(this).index()).show();
         })
 
         //全屏

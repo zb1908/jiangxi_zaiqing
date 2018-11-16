@@ -247,8 +247,17 @@ header {
 .warnDepart li:last-child {
     border-right: none;
 }
-#warnBox .warnCont .warnList{
+/* #warnBox .warnCont .warnList{
+    
+} */
+.navCont{
+    display:none;
     margin-top: .1rem;
+    color: #fff;
+    font-size: .16rem;
+}
+.on{
+    display: block;
 }
 #warnBox .warnCont .warnList li{
     margin-top: 4px;
